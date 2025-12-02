@@ -45,3 +45,5 @@ However, I will list a few that were made before moving on the the next task.
 - Configure screensaver and screenlock, prevent users from changing
 - Configure PAM; password attempts, lockout time, etc. 
 - Create a sudo logfile for easier tracking and auditing of sudo commands
+- Create a login security banner. Mine says "Please don't hack me!"
+![security banner](/rhelscreenshots/loginbanner.png)
