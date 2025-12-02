@@ -15,5 +15,5 @@ RHEL 9 server build for learning system administration, security configuration/s
 - Monitor, log, and automate system activity
 
 ## Project Documentation
-[OS Setup](/docs/os-setup.md) - Initial installation of RHEL on a Virtual Machine
-[Initial Security Scan and Hardening](/docs/initial-security.md) - This is the initial security scan and hardening
+- [OS Setup](/docs/os-setup.md) - Initial installation of RHEL on a Virtual Machine
+- [Initial Security Scan and Hardening](/docs/initial-security.md) - This is the initial security scan and hardening
