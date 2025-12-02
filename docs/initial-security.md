@@ -22,7 +22,7 @@ sudo oscap xccdf eval --profile xccdf_org.ssgproject.content_profile_cis \
   --report /tmp/initial-report.html \
   /usr/share/xml/scap/ssg/content/ssg-rhel9-ds.xml
 ```
-![Initial Scan Report](/rhelscreenshots/initial-scan-result.png)
+![Initial Scan Report](/rhelscreenshots/initial-scan-report.png)
 
 As you can see, we failed 197 tests and passed 171.
 Our final score was 63%, and from what I remember from school; that's a failure.
