@@ -37,6 +37,7 @@ CUPS (Common Unix Printing System) allows a computer to act as a print server. I
 
 ## OpenSSH
 OpenSSH had 17 fails. While I will be using SSH on this server, there are still things I can do to secure it.
+![SSH Fails](/rhelscreenshots/sshfails.png)
 1. SSH Client alive count max and alive interval
 These two settings make it so that if a client is unresponsive for a set amount of time, it is automatically disconnected.
 I am setting the `ClientAliveInterval` to 60 and the `ClientAliveCountMax` to 3. This means that every 60 seconds, the server will send a keep-alive message to the client if the client is idle. After 3 of these keep-alive messages (so 180 seconds of inactivity) the server will disconnect the client.
@@ -45,3 +46,17 @@ Host based authentication allows any user on an authenticated machine to access 
 3. Disable Empty Password Login
 This setting will explicitly disallow any SSH login with empty passwords.
 `PermitEmptyPasswords no`
+GSSAPI (General Security Services Application Programming Interface)
+GSSAPI provides an API to security services. This is not something I'll be using so I'm going to disable it.
+`GSSAPIAuthentication no`
+4. Disable SSH support for .rhosts
+5. Disable root login through SSH
+6. Disallow SSH environment options
+7. Enable SSH warning banner
+8. set LoginGraceTime parameter
+9. set SSH Daemon LogLevel to VERBOSE
+10. set SSH authentication attempt limit
+11. set SSH MaxSessions limit
+12. make sure SSH MaxStartups is configured
+13. Only use strong key exchage algorithms
+14. Only use strong MACs
